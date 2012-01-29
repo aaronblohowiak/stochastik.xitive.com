@@ -1,0 +1,78 @@
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;    
+  font-size: 16px;
+  color: #333;
+  background-color:black;
+  background-image:url("./images/black-linen.png");
+}
+
+body #main{
+  margin: 0 auto;
+  width: 922px;
+  border:22px solid black;
+  box-shadow:1px 1px 25px #000;
+  
+}
+
+ul, li, p{
+  margin:0;
+  padding:0;
+}
+p{
+  margin-bottom:2em;
+}
+li{
+  margin-left:2em;
+}
+#content {
+  background: url('./images/index-auto_03.png') repeat-y;
+  padding: 0 2em;
+}
+
+#description {
+  width: 500px;
+  padding-right:20px;
+  float:left;
+}
+#features {
+  float:left;
+  position:relative;
+  width:300px;
+  margin-left:2em;
+}
+h1,h2{
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;    
+  font-weight:normal;
+  margin: 0 0 1em 0;
+  padding:0;
+  color: #333;
+  
+}
+h1{
+  font-size: 2em;
+  line-height: 1em;
+}
+h2{
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom:0.5em;
+}
+div, ul, img{
+  margin:0 0;
+  padding:0;
+  line-height:200%;
+}
+#topbar {
+  background-color:#111;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  line-height:100%;
+  color:#ccc;
+  
+}
+
+#topbar > a:link, #topbar > a:visited {
+  color:#ccc;
+}
