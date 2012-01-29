@@ -1,0 +1,182 @@
+<html>
+<head>
+  <title>Stochastik Drum Machine User Manual</title>
+  <style>
+  body{
+    font-family:"HelveticaNeue-UltraLight";
+  }
+  
+  h1,h2,h3{
+    color: #333;
+    
+    font-family:"HelveticaNeue";
+  }
+  
+  h1, h2{
+    text-align:center;
+  }
+  
+  h1{
+    font-size: 72px;
+  }
+  
+  h2{
+    font-size: 40px;
+    page-break-before:always;
+  }
+  
+  p{
+    line-height: 125%;
+  }
+  </style>
+</head>
+<body>
+  
+  <h1>Stochastik Drum Machine <br/>User Manual</h1>
+  <div style="text-align:center">iPad, iPhone, iTunes, GarageBand and App Store are trademarks of Apple Inc.<br/>
+  All other trademarks are the property of their respective owners.<br/>
+  Copyright &copy; Xitive, Inc. All right reserved.
+  </div>
+  <h2>Preface</h2>
+  <h3>Drum Machine Jargon:</h3>
+  <p>If you are new to Drum Machines, there are some terms of art that may seem odd or confusing at first but are simple once you see how they fit together.  This section introduces the vocabulary used when talking about drum machines and their use.  This will be on the quiz.  Note: there is no quiz, but the better you know this stuff, the easier it will be to get started.</p>
+
+  <p>Just like a drummer hits things to the beat, the drum machine is responsible for playing <em>samples</em> at the right time.  A sample is what we call the recording of a single hit of a drum, cymbal, etc.  The collection of drums and cymbals that surrounds a drummer is called the drum kit.  In Stochastik, we call the collection of samples a <em>kit</em> as well.</p>
+
+  <p>The human drummer is supposed to smack the right drum at the right time, repeating the same basic rhythm over and over again.  In Stochastik, we call this plan of attack a <em>pattern</em>.  The pattern breaks down time into 16 equal parts, and we call each of these 16 parts a <em>step</em>. When you dance, you might count "5 6 7 8".  It is kind of like that, but counting really fast.  Each step has the information about wether or not a particular sample should be played.</p>
+
+  <p>So, you have the sounds that you play (the <em>samples</em>) in a collection (the <em>kit</em>) that you plan to play at the right time (the <em>pattern</em>.)  In practice, you will probably use a kit with a few different patterns at about the same speed, volume and <em>shuffle</em>.  "Shuffle" (or "swing") is the "swagger" that a drummer gives to the rhythm. It gives a pattern a "jazzy" feel.  We call this collection of patterns, kit and details a <em>song</em>.</p>
+
+  <p>So far, you've learned about the terms <em>samples</em>, <em>kits</em>, <em>patterns</em>, <em>steps</em>, <em>shuffle</em> and <em>songs</em>.</p>
+
+  <p>You may want to then share your percussive genius with the world.  You can do this by sending your friends with iPads copies of your Stochastik files (if they also own Stochastik, perhaps because you told them to buy it...) OR you can send them a sound file.   Only Stochastik can play Stochastik Songs, kits and patterns. Sound files can be played by every computer ever.</p>
+
+  <p>Sound files are also useful if you are using another app to record live instruments and want to mix everything in there (or apply effects, et cetera.)  In computer music, we frequently use <em>WAV</em> files for sound files because they are better quality than MP3.  You can always turn a WAV into an MP3 for space-saving and sending to your fans.  In order to turn your Stochastik composition into a sound file, you must "bounce it to WAV."  This is a stupid term that people have been using for years that dates back to the.... Anyway, while it is a silly term, "bounce" is the word we use when we mean to say "turn all of this into a single sound file". </p>
+
+  <h2>How To Use Stochastik</h2>
+  
+  <h3>Programming Stochastik Rhythms</h3>
+  <img src="images/pattern.png"/>
+  <p>Stochastik is has the unique feature of being able to set a probability that a sample will play at each step.  The probability can be 0 (off, black) to 1 (always, green) or more interestingly, somewhere in-between. You can slide the probability up and down with your finger.  If you set the probability to about half-way up, it will sound about 50% of the time.  Stochastik is a probability machine, not a permutation machine.  By that, I mean that it is not guaranteed to be exactly 50% of the time.  You can have a couple run-throughs where it will not sound at all and then a couple run throughs where it strikes every time.  This is just like flipping a coin.  Of course, you can "weight the coin" by setting a small probability (make it a short red bar) or a large probability (make it a tall yellow bar.)  </p>
+
+  <h3>Using Sliders in Stochastik</h3>
+  <img src="images/slider.png">
+  <p>Sliders in Stochastik have a description, the slider and then a numerical display.  Drag the slider to change the value.  When you tap the numerical display a dialogue will open that lets you enter an exact amount.  This lets you have the interactivity of a touch interface while allowing you to maintain exact control.</p>
+  
+  <h3>Setting up your kit</h3>
+
+  <h4>Previewing a sample</h4>
+  <img src="images/trigger.png"/>
+  <p>You can always preview the currently-loaded sample by tapping the trigger pad.</p>
+  <br/>
+  <h4>Sample Settings</h4>
+  <img src="images/gear.png"/>
+
+  <p>Change a sample's settings by hitting the Gear to the right of the sample trigger pad (the button you hit to hear the sound.)  If you see an alert pop up and tell you that a sound could not be played because one hasn't been selected then you are hitting the trigger pad and not the gear.</p>
+
+  <p>A sample has the following settings:</p>
+
+  <ol>
+  <li>Gain.  This is the amount to change the power of the source sample.  Increasing the gain above 1 makes it louder, decreasing it below 1 makes it quieter.</li>
+  <li>Modify gain with chance.  If this is off (default) it does nothing.  If you turn this on, then notes with a lower probability are quieter.  This is useful if you want low-probability notes to be more like "ghost notes" or "grace notes" than accents.</li>
+  <li>Pan.  Sets the position of the audio, from the left speaker (0) to the right speaker (1). A setting of 0.5 will make the sound come from both speakers equally.</li>
+  </ol>
+
+  <h4>Changing the sample</h4>
+  <img src="images/swap sample.png"/>
+  <p>If you would like to try replacing one sound with another or build your own kit from scratch, you will need to change the sample.  You can change the sample by clicking on the gear to the right of the trigger pad and selecting "Swap Sample" from the tabs at the bottom of the popup.</p>
+
+  <p>The samples are separated into Custom and Included samples.  See "Loading Custom Files" for more information about how to get custom samples into Stochastik.</p>
+
+  <p>The samples are roughly arranged by Kit or Drum machine, though the 808 and 909 have multiple folders for their sounds because of the large number of samples.  For example, the 909 bass drum has been sampled over 20 times so you can experience its bass drum for each combination of knob settings (attack, tone and decay, if I recall correctly.)</p>
+
+  <p>Tap on the folder to see the list of relevant samples.  If you tap on the sample, it will play the sample but it will <em>not</em> swap the sample.  To swap the sample, you must tap the "SELECT" button on the right side.  When you do this, the SELECT button will turn into a checkmark, and the name of the sample will be placed on the sample trigger.</p>
+
+  <h3>Loading custom files</h3>
+
+  <p>You can load custom samples, kits, patterns and songs through Email, File Sharing or apps like the Dropbox iPad app. Note: your samples must be in WAV format, any bit depth, mono or stereo.</p>
+
+  <h4>Load files from email</h4>
+
+  <p>Tap and hold on the file attachment in the Mail application until the pop-up appears.  Select "Open In..." and select "Stochastik" from the list.  You may have to scroll the pop-up list to see Stochastik.</p>
+
+  <h4>Load files from File Sharing</h4>
+
+  <p>Please see: <a href="http://support.apple.com/kb/ht4094">http://support.apple.com/kb/ht4094</a> for details about how to use File Sharing.  Once you load up the files and sync, they should appear in Stochastik.</p>
+
+<img src="images/manage exports.png"/>
+  <p>When you load samples using File Sharing, they will appear in the list of Custom samples.  When you load patterns, kits or songs, you will have to use the "Manage Samples and exports" button in the lower-right corner of the main screen. It looks like an open box with an arrow coming out of it.  Select the file you would like to load and then choose "Import" from the menu that pops up.</p>
+
+  <h4>Load files from Dropbox</h4>
+
+  <p>To load files from Dropbox, make sure you have downloaded and installed the Dropbox iPad app.  In the Dropbox app, select the file you would like to import in the left side of the app.  In the upper-right corner of the application, there is a curved arrow.  If tapping that does nothing, then you may have to Star the file to enable the arrow.  When you tap the arrow, it should have a list of applications that can open the file.  Select Stochastik from the list, and the file will open in Stochastik.</p>
+
+  <h3>Notes on loading specific file types</h3>
+
+  <h4>Importing a kit</h4>
+
+  <p>When you import a kit into an existing song, you override the kit that exists for that song.  There is no undo, so please be careful.</p>
+
+  <h4>Importing a song</h4>
+
+  <p>When you import a song, Stochastik will append a number to its name if there is already a song with the same name. </p>
+
+  <h4>Importing a pattern</h4>
+
+  <p>When you import a pattern into an existing song, Stochastik will append a number to its name if there is already a pattern with the same name.</p>
+
+  <h4>Importing a sample</h4>
+
+  <p>When you import a sample, the operating system may append a number to the end of the sample's name.  If you would like to replace a custom sample with one of the same name, the best way is using File Sharing connected to your computer.  In the future, Stochastik may ask you for your preferred name for the new sample.</p>
+
+  <h2>Exporting</h2>
+  <p>You may chose to export sound files or Stochastik files.</p>
+
+  <h3>Exporting sound files</h3>
+
+  <img src="images/bounce.png"/>
+  <p>Stochastik exports to CD-quality sound files; 16-bit stereo 44.1hz WAV files.  When you tap the Action/Export button at the bottom of the screen, (it has the curved arrow) you will see the "Export Sound" screen.  This is how you export a sound file.  Spin the number on the left to chose how many times through the current pattern you would like to be in your export.  If you chose 1, then it will only export a one-measure loop.  If you have some probability in your pattern, you will probably want to export multiple measures to let the beat have some variation.  Hit the "Bounce to file &amp; clipboard".  Put in a file name and hit "Save."  A spinner will pop up to let you know that Stochastik is creating your export and then you'll get a nice message that lets you know the export is done and the audio has been added to your pasteboard ("clipboard" / "copy+paste buffer".)  You can now download the file with File Sharing or paste the audio into another app.</p>
+
+  <h3>AudioCopy &amp; Pasteboard</h3>
+
+  <p>When you export a pattern to file, it is automatically copied into the pasteboard for use in other applications.  If you would like to copy a previous export into the pasteboard, press the "Manage Samples and exports" button and select the file.  Choose "Copy to clipboard" from the buttons that pop up, and the audio will be added to your pasteboard.  Stochastik uses the General Pasteboard, which makes it compatible with <em>many</em> iOS audio applications, including every app that has a recent version of Sonoma WireWorks' AudioCopy/AudioPaste.</p>
+
+  <h3>Exporting Stochastik files</h3>
+  <img src="images/export.png"/>
+
+  <p>Tap the Action/Export button with the curved arrow at the bottom of the screen and select "Export Settings" at the bottom of the window that pops-up.  Select the settings that you would like to export; the current Song (including the kit and all patterns,) the current pattern or the current kit.  Additionally, select where you would like to export to; email or File Sharing. When you're ready to export, tap the Export button. If you are using something like Dropbox, then you need to export to File Sharing first. Then you can select the file in the "Manage Samples and exports" popup and select "Open In..." in the buttons that come up.</p>
+
+  <h4>Notes on exporting Kits and Songs</h4>
+
+  <p>Stochastik does <em>not</em> bundle custom songs with kits or songs.  There may be weirdness (wrong sounds / no sound) if you load a kit or song that has a kit that refers to a custom sample that is not on the iPad. If you put the sample (back) on the iPad with the same name, then it should work as normal.</p>
+
+  <h3>Setting up your pattern</h3>
+  <img src="images/pattern name.png"/>
+  <h4>Swap Pattern</h4>
+  <p>To swap the currently playing pattern, tap its name and select a new pattern or song from the dialogue that opens.</p>
+  <h3>Create a new pattern</h3>
+  <p>You can create a new pattern from the "Swap Pattern" screen.  Tap on the name of the currently playing pattern to open the Swap Pattern screen. In the first section, you will see options to create a new (blank) pattern or to copy the current pattern.</p>
+  
+  <h3>Setting up your song</h3>
+  <h4>Setting the BPM, Tempo or Swing/Shuffle</h4>
+  <img src="images/song settings.png"/>
+  <p>Touch the name of the song to open the Song Settings panel. From there, you can set the BPM, Tempo and Swing.</p>
+  <h4>Swap Song</h4>
+  <p>To change the currently playing song, tap the name of the currently playing song and then select the "Swap Song" tab from the pop-up that appears.  Finally, tap on the name of the song you would like to play.</p>
+  <h4>Create a new song</h4>
+  <p>To create a new song, tap the name of the currently playing song and then select the "Swap Song" tab from he bottom of the pop-up.  In the first section of this screen, tab the "New Song" to create a new song.  It will not be loaded with any kits or patterns, but it will have a default tempo and swing set.  Heehee, swingset.</p>
+  
+  <h2>Appendix</h2>
+
+  <h3>Appendix A: Why I made Stochastik</h3>
+
+  <p>I thought it would be fun to play with.  Also, I hate boring loops.</p>
+
+  <p>Additionally, generative music has either been erratic and un-musical OR the creation of a statistical model derived from existing works.  In the use of probabilistic models, nerds have fed a bunch of sheet music into their computers and had their computers spit out music that reflected the mathematical "trends" or patterns contained within.  While interesting academically, there are two big problems: 1) the computer gets all the groupies and 2) the music it produces is delivered to the programmer, it is not an interactive <em>tool</em> for musicians to create new compositions.</p>
+
+  <p>In creating Stochastik, I have sought to create a tool to give musicians the ability to construct their own probabilistic rhythm models in a way that encourages exploration and play.  To make it easier to interact with the computer and create a musical outcome, I have adopted the general display of a "step-programmed" drum machine, adhering to a set meter, and time signature and quantization.</p>
+
+  <h3>Appendix B: Sample sources.</h3>
+  <p>Please see <a href="http://stochastik.xitive.com/samples.html">http://stochastik.xitive.com/samples.html</a> for information about sample sources.</p></div>
+</body>
+</html>
