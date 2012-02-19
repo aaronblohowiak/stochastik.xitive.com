@@ -4,14 +4,17 @@
   <style>
   body{
     font-family:"HelveticaNeue-UltraLight";
+    letter-spacing: 1px;
+
   }
   
   h1,h2,h3{
     color: #333;
-    
+    letter-spacing: 0px;
     font-family:"HelveticaNeue";
   }
   
+
   h1, h2{
     text-align:center;
   }
@@ -25,14 +28,18 @@
     page-break-before:always;
   }
   
-  p{
+  p, li, div{
     line-height: 125%;
+
   }
   </style>
 </head>
 <body>
   
   <h1>Stochastik Drum Machine <br/>User Manual</h1>
+   
+  <div style="text-align:center">for Stochastik v. 1.0<br/><br/><br/></div>
+
   <div style="text-align:center">iPad, iPhone, iTunes, GarageBand and App Store are trademarks of Apple Inc.<br/>
   All other trademarks are the property of their respective owners.<br/>
   Copyright &copy; Xitive, Inc. All right reserved.
@@ -105,7 +112,7 @@
   <p>Please see: <a href="http://support.apple.com/kb/ht4094">http://support.apple.com/kb/ht4094</a> for details about how to use File Sharing.  Once you load up the files and sync, they should appear in Stochastik.</p>
 
 <img src="images/manage exports.png"/>
-  <p>When you load samples using File Sharing, they will appear in the list of Custom samples.  When you load patterns, kits or songs, you will have to use the "Manage Samples and exports" button in the lower-right corner of the main screen. It looks like an open box with an arrow coming out of it.  Select the file you would like to load and then choose "Import" from the menu that pops up.</p>
+  <p>When you load samples using File Sharing, they will appear in the list of Custom samples.  When you load patterns, kits or songs, you will have to use the "Manage Samples and exports" button in the lower-right corner of the main screen. It looks like a filing cabinet.  Select the file you would like to load and then choose "Import" from the menu that pops up.</p>
 
   <h4>Load files from Dropbox</h4>
 
@@ -129,33 +136,13 @@
 
   <p>When you import a sample, the operating system may append a number to the end of the sample's name.  If you would like to replace a custom sample with one of the same name, the best way is using File Sharing connected to your computer.  In the future, Stochastik may ask you for your preferred name for the new sample.</p>
 
-  <h2>Exporting</h2>
-  <p>You may chose to export sound files or Stochastik files.</p>
-
-  <h3>Exporting sound files</h3>
-
-  <img src="images/bounce.png"/>
-  <p>Stochastik exports to CD-quality sound files; 16-bit stereo 44.1hz WAV files.  When you tap the Action/Export button at the bottom of the screen, (it has the curved arrow) you will see the "Export Sound" screen.  This is how you export a sound file.  Spin the number on the left to chose how many times through the current pattern you would like to be in your export.  If you chose 1, then it will only export a one-measure loop.  If you have some probability in your pattern, you will probably want to export multiple measures to let the beat have some variation.  Hit the "Bounce to file &amp; clipboard".  Put in a file name and hit "Save."  A spinner will pop up to let you know that Stochastik is creating your export and then you'll get a nice message that lets you know the export is done and the audio has been added to your pasteboard ("clipboard" / "copy+paste buffer".)  You can now download the file with File Sharing or paste the audio into another app.</p>
-
-  <h3>AudioCopy &amp; Pasteboard</h3>
-
-  <p>When you export a pattern to file, it is automatically copied into the pasteboard for use in other applications.  If you would like to copy a previous export into the pasteboard, press the "Manage Samples and exports" button and select the file.  Choose "Copy to clipboard" from the buttons that pop up, and the audio will be added to your pasteboard.  Stochastik uses the General Pasteboard, which makes it compatible with <em>many</em> iOS audio applications, including every app that has a recent version of Sonoma WireWorks' AudioCopy/AudioPaste.</p>
-
-  <h3>Exporting Stochastik files</h3>
-  <img src="images/export.png"/>
-
-  <p>Tap the Action/Export button with the curved arrow at the bottom of the screen and select "Export Settings" at the bottom of the window that pops-up.  Select the settings that you would like to export; the current Song (including the kit and all patterns,) the current pattern or the current kit.  Additionally, select where you would like to export to; email or File Sharing. When you're ready to export, tap the Export button. If you are using something like Dropbox, then you need to export to File Sharing first. Then you can select the file in the "Manage Samples and exports" popup and select "Open In..." in the buttons that come up.</p>
-
-  <h4>Notes on exporting Kits and Songs</h4>
-
-  <p>Stochastik does <em>not</em> bundle custom songs with kits or songs.  There may be weirdness (wrong sounds / no sound) if you load a kit or song that has a kit that refers to a custom sample that is not on the iPad. If you put the sample (back) on the iPad with the same name, then it should work as normal.</p>
-
+  <h2>Managing Songs, Patterns &amp; Kits</h2>
   <h3>Setting up your pattern</h3>
   <img src="images/pattern name.png"/>
   <h4>Swap Pattern</h4>
   <p>To swap the currently playing pattern, tap its name and select a new pattern or song from the dialogue that opens.</p>
   <h3>Create a new pattern</h3>
-  <p>You can create a new pattern from the "Swap Pattern" screen.  Tap on the name of the currently playing pattern to open the Swap Pattern screen. In the first section, you will see options to create a new (blank) pattern or to copy the current pattern.</p>
+  <p>You can create a new pattern from the "Swap Pattern" screen.  Tap on the name of the currently playing pattern to open the Swap Pattern screen. In the first section, you will see options to create a new (blank) pattern or to copy the current pattern.  When you tap "Create new pattern >", it will then ask you how many steps you would like to have in your new pattern.  There are 16 steps in a measure, so you can chose to have 16 steps (1 measure), 32 steps (2 measures) or 64 steps (4 measures) in your pattern.</p>
   
   <h3>Setting up your song</h3>
   <h4>Setting the BPM, Tempo or Swing/Shuffle</h4>
@@ -165,7 +152,54 @@
   <p>To change the currently playing song, tap the name of the currently playing song and then select the "Swap Song" tab from the pop-up that appears.  Finally, tap on the name of the song you would like to play.</p>
   <h4>Create a new song</h4>
   <p>To create a new song, tap the name of the currently playing song and then select the "Swap Song" tab from he bottom of the pop-up.  In the first section of this screen, tab the "New Song" to create a new song.  It will not be loaded with any kits or patterns, but it will have a default tempo and swing set.  Heehee, swingset.</p>
-  
+
+  <h4>Restoring an included song</h4>
+  <p>If you have used Stochastik and want to restore an included (factory-default) song, then you are in luck!  You can find all of the factory-included content tucked away in the filing cabinet.  Tap the filing cabinet, select songs, scroll down to the song you'd like to restore and then press Import.  You will see a message that tells you the name of the imported song -- we won't overwrite your current song.  It will probably be named "songname-1".</p>
+
+
+  <h3>Setting up your Kit</h3>
+  <p>You always set up a kit within the context of a song.  Each song has exactly one kit.  You can set up the samples in the kit, including the pan and gain.  See the "Sample Settings" part of the manual for more details. </p>
+  <h4>Swap Kit</h4>
+  <p>You can replace all of the sounds in your kit for any of your songs at any time.  Tap on the filing cabinet and select kits.  There, you will see the Included kits that come with Stochastik.  Select the kit you'd like to use and then press "Import" and then pick the song you would like to use with this kit.</p>
+  <h4>Move a kit from one song to another</h4>
+  <p>To move a kit from one song to another, select the song that has the kit you would like to move and then export the kit to file sharing. See "Exporting Stochastik Files" for more information on how to do this.  Then, open the filing cabinet, select kits and tap on the kit you just exported.  Select "Import.." and chose the destination song for this kit.</p>
+
+  <h2>Exporting</h2>
+  <p>You may chose to export sound files or Stochastik files.</p>
+
+  <h3>Exporting sound files</h3>
+
+  <img src="images/bounce.png"/>
+  <p>Stochastik exports to CD-quality sound files; 16-bit stereo 44.1hz WAV files.  When you tap the Action/Export button at the bottom of the screen, (it has the curved arrow) you will see the "Export Sound" screen.  This is how you export a sound file.  Spin the number on the left to chose how many times through the current pattern you would like to be in your export.  If you chose 1, then it will only export a one-measure loop.  If you have some probability in your pattern, you will probably want to export multiple permutations to let the beat have some variation.  Hit the "Bounce to file &amp; clipboard".  Put in a file name and hit "Save."  A spinner will pop up to let you know that Stochastik is creating your export and then you'll get a nice message that lets you know the export is done and the audio has been added to your pasteboard ("clipboard" / "copy+paste buffer".)  You can now download the file with File Sharing or paste the audio into another app.</p>
+
+  <h3>AudioCopy &amp; Pasteboard</h3>
+
+  <p>When you export a pattern to file, it is automatically copied into the pasteboard for use in other applications.  If you would like to copy a previous export into the pasteboard, press the filing cabinet and select the file.  Choose "Copy to clipboard" from the buttons that pop up, and the audio will be added to your pasteboard.  Stochastik uses the General Pasteboard, which makes it compatible with <em>many</em> iOS audio applications, including every app that has a recent version of Sonoma WireWorks' AudioCopy/AudioPaste.</p>
+
+  <h3>Exporting Stochastik files</h3>
+  <img src="images/export.png"/>
+
+  <p>Tap the Action/Export button with the curved arrow at the bottom of the screen and select "Export Settings" at the bottom of the window that pops-up.  Select the settings that you would like to export; the current Song (including the kit and all patterns,) the current pattern or the current kit.  Additionally, select where you would like to export to; email or File Sharing. When you're ready to export, tap the Export button. If you are using something like Dropbox, then you need to export to File Sharing first. Then you can select the file in the filing cabinet popup and select "Open In..." in the buttons that come up.</p>
+
+  <h4>Notes on exporting Kits and Songs</h4>
+
+  <p>Stochastik does <em>not</em> bundle custom songs with kits or songs.  There may be weirdness (wrong sounds / no sound) if you load a kit or song that has a kit that refers to a custom sample that is not on the iPad. If you put the sample (back) on the iPad with the same name, then it should work as normal.</p>
+
+  <h2>Using Stochastik with other Apps</h2>
+  <h3>WiST by KORG, Inc.</h3>
+  <p>WiST is a technology that lets you use an app on one iOS device synchronize start/stop/tempo with another iOS device.  Tap on the wrench and then tap on the giant "WIST" logo to begin the wist handshake process.  Enable WIST on your other device, and the two should find each other. Once the handshake is complete, you should be able to press play on the "master" device and the other device will start at the same time, in sync.</p>
+
+  <h3>AudioCopy / Pasteboard.</h3>
+  <p>Many apps support copying to or pasting from the Pasteboard.  Whenever you export an audio file (see "Exporting sound files",) the audio is automatically added to the clipboard for you.  Then, switch to the other app and use its functionality to paste the loop into your track.  Stochastik does not currently support receiving samples using "paste".  If this is something you would like, please email support@xitive.com</p>
+
+  <h3>Background Audio</h3>
+  <p>As you may have noticed, Stochastik keeps playing when you change apps.  Stochastik will continue to play if you use other apps that support background audio.  Some apps have chosen not to play well with others and will force Stochastik to stop playing.  If that happens, you can always switch back to Stochastik and press play to resume.</p>
+
+  <h2>AHHHH SOMETHING WENT WRONG!?!?</h2>
+  <p>Whoops! Stochastik doesn't have an "undo".  Enjoy life on the edge.  If you think something is broken or have found a bug, please email support@xitive.com and we'll do our best to address the issue.</p>
+  <h3>How do I delete stuff?</h3>
+  You can't delete any of your current songs or patterns, but you can delete your exported stuff using iTunes.  Contact support@xitive.com if you think deleting stuff is an important feature.
+
   <h2>Appendix</h2>
 
   <h3>Appendix A: Why I made Stochastik</h3>
@@ -177,6 +211,7 @@
   <p>In creating Stochastik, I have sought to create a tool to give musicians the ability to construct their own probabilistic rhythm models in a way that encourages exploration and play.  To make it easier to interact with the computer and create a musical outcome, I have adopted the general display of a "step-programmed" drum machine, adhering to a set meter, and time signature and quantization.</p>
 
   <h3>Appendix B: Sample sources.</h3>
-  <p>Please see <a href="http://stochastik.xitive.com/samples.html">http://stochastik.xitive.com/samples.html</a> for information about sample sources.</p></div>
+  <p>Please see <a href="http://stochastik.xitive.com/samples.html">http://stochastik.xitive.com/samples.html</a> for information about sample sources.</p>
+  </div>
 </body>
 </html>
