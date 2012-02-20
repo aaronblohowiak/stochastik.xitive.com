@@ -63,16 +63,19 @@ div, ul, img{
   padding:0;
   line-height:200%;
 }
-#topbar {
+#topbar, .footerbar {
   background-color:#111;
   height: 22px;
   margin: 0;
   padding: 0;
   line-height:100%;
   color:#ccc;
-  
 }
 
-#topbar > a:link, #topbar > a:visited {
+.footerbar{
+  padding-top:20px;
+}
+
+#topbar > a:link, #topbar > a:visited, .footerbar > a:link, .footerbar > a:visited {
   color:#ccc;
 }
